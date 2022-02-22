@@ -1,0 +1,24 @@
+body {
+  background-color: #aec5c5;
+}
+
+.bigCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.leftCont {
+  height: 100vh;
+  width: 25vw;
+  background: red;
+}
+
+.rightCont {
+  height: 100vh;
+  width: 75vw;
+  background: green;
+}
