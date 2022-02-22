@@ -12,13 +12,64 @@ body {
 }
 
 .leftCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 25vw;
   background: red;
 }
 
+#leftMenu {
+  display: flex;
+  height: 50em;
+  width: 25em;
+  background: #162129;
+  border-radius: 1em;
+  color: white;
+}
+
 .rightCont {
+  display: flex;
+  justify-content: space-between;
   height: 100vh;
   width: 75vw;
   background: green;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  width: 6.5vw;
+}
+
+.leftButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 14pt;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: space-between;
+  width: 15vw;
+  flex-direction: row;
+  background: yellow;
+}
+
+.rightSide p {
+  margin: 6px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 5em;
+  color: white;
+  background-color: #162129;
 }
