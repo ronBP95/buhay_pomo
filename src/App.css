@@ -9,7 +9,8 @@ body {
 .leftPage {
   height: 95vh;
   width: 20em;
-  background: red;
+  min-width: 20em;
+  background: #282c34;
   margin: 0.5em;
   border-radius: 1em;
   overflow: hidden;
@@ -47,8 +48,8 @@ body {
   justify-content: space-between;
   background-color: blue;
   height: 7vh;
-  width: 9em;
-  min-width: 9em;
+  width: 8.5em;
+  min-width: 8.5em;
 }
 
 .signButtons {
@@ -56,8 +57,8 @@ body {
   background: teal;
   justify-content: space-between;
   height: 7vh;
-  min-width: 13.5em;
-  width: 13.5em;
+  min-width: 13em;
+  width: 13em;
   padding-left: auto;
 }
 
@@ -66,7 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: black;
+  background-color: #282c34;
   height: 1em;
   width: 3em;
   padding: 0.5em;
