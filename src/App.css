@@ -8,9 +8,9 @@ body {
 
 .leftPage {
   height: 95vh;
-  width: 20vw;
+  width: 20em;
   background: red;
-  margin: 1em;
+  margin: 0.5em;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@ body {
   background: green;
   height: 95vh;
   width: 80vw;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
   margin-right: 1em;
   overflow: hidden;
@@ -37,6 +37,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: -1em;
+  background: yellow;
+  min-width: 23.5em;
+  width: 100%;
 }
 
 .logoButtons {
@@ -44,7 +47,8 @@ body {
   justify-content: space-between;
   background-color: blue;
   height: 7vh;
-  width: 11vw;
+  width: 9em;
+  min-width: 9em;
 }
 
 .signButtons {
@@ -52,7 +56,9 @@ body {
   background: teal;
   justify-content: space-between;
   height: 7vh;
-  width: 16.75vw;
+  min-width: 13.5em;
+  width: 13.5em;
+  padding-left: auto;
 }
 
 .button {
@@ -75,12 +81,13 @@ body {
   line-height: 0.5em;
   margin-top: 7.5em;
   background: yellow;
-  min-width: 1em;
+  min-width: 3.5em;
   width: 3.5em;
   min-height: 25em;
+  height: 25em;
   border-radius: 0.5em;
 }
 
 hr {
-  width: 4.8vw;
+  width: 3.3em;
 }
