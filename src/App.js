@@ -2,7 +2,7 @@ import './App.css';
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
-import { BsFillPersonFill, BsFillVolumeDownFill } from "react-icons/bs";
+import { BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "react-icons/bs";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-icons/ri";
 import { GiCrystalBall } from "react-icons/gi";
@@ -13,7 +13,17 @@ function App() {
       
       <div class="leftPage">
         <div class="mainMenu">
-          <p> SIDE MENU</p>
+          <div class="exploreRow">
+            
+            <div class="exploreButton">
+              
+             <div id="exploreIcon"><BsArrowLeft /></div> 
+             <div>Explore</div>
+
+            </div> 
+            
+            <div class="minIcon"><BsDash  size={25}/></div>
+          </div>
         </div>
       </div>
       <div class="rightPage">

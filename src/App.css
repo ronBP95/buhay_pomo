@@ -1,5 +1,10 @@
 body {
-  background-color: #aec5c5;
+  /* background-color: #aec5c5; */
+  background: url(../public/assets/images/aot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -8,7 +13,7 @@ body {
 }
 
 .leftPage {
-  height: 95vh;
+  height: 97.5vh;
   width: 20em;
   min-width: 20em;
   background: #282c34;
@@ -19,14 +24,52 @@ body {
 
 .mainMenu {
   color: white;
-  text-align: center;
   padding-top: 1em;
+}
+
+.exploreRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1.5em;
+  height: 1em;
+  width: 18em;
+  /* background: green; */
+  padding: 1em;
+}
+
+.exploreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d333b;
+  padding: 0.35em;
+  margin-left: -0.5em;
+  border-radius: 0.5em;
+}
+
+#exploreIcon {
+  margin-top: 0.25em;
+  margin-right: 0.5em;
+}
+
+.minIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+#exploreLine {
+  width: 0.75em;
+  color: white;
+  border-color: white;
 }
 
 .rightPage {
   display: flex;
   flex-direction: column;
-  background: green;
+  /* background: green; */
   height: 95vh;
   width: 80vw;
   margin-top: 0.5em;
@@ -39,7 +82,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: -1em;
-  background: yellow;
+  /* background: yellow; */
   min-width: 23.5em;
   width: 100%;
 }
@@ -47,7 +90,7 @@ body {
 .logoButtons {
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  /* background-color: blue; */
   height: 7vh;
   width: 9em;
   min-width: 9em;
@@ -55,7 +98,7 @@ body {
 
 .signButtons {
   display: flex;
-  background: teal;
+  /* background: teal; */
   justify-content: space-between;
   height: 7vh;
   min-width: 13.5em;
