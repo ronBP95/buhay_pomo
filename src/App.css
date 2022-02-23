@@ -1,5 +1,6 @@
 body {
   background-color: #aec5c5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .page {
@@ -48,9 +49,8 @@ body {
   justify-content: space-between;
   background-color: blue;
   height: 7vh;
-  width: 8em;
-  min-width: 8em;
-  line-height: 1em;
+  width: 9em;
+  min-width: 9em;
 }
 
 .signButtons {
@@ -83,17 +83,18 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  line-height: 0.5em;
-  margin-top: 7.5em;
+  line-height: 0.75em;
+  margin-top: 11em;
   background: #282c34;
   color: white;
   min-width: 3.5em;
   width: 3.5em;
-  min-height: 34em;
-  height: 34em;
+  min-height: 37em;
+  height: 37em;
   border-radius: 0.5em;
-  font-size: 9pt;
-  padding: 0.25em;
+  font-size: 8pt;
+  padding: 0.75em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .icon {
