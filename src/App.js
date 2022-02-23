@@ -13,13 +13,20 @@ function App() {
         </div>
         
         <div class="rightCont">
-          
-          <div class="leftSide">
 
-            <div class="leftButtons">
-              <p class="button">Buhay</p>
-              <p class="button">Streak</p>
+            <div class="allButtons">  
+              <div class="leftSide">
+                <p class="button">Buhay</p>
+                <p class="button">Streak</p>
+              </div>
+
+              <div class="rightSide">
+                <p class="button">Signin</p>
+                <p class="button">FS B</p>
+                <p class="button">hamMenu</p>
+              </div>
             </div>
+
             <div class="widgetMenu">
               <p>widget1</p>
               <p>widget2</p>
@@ -28,14 +35,6 @@ function App() {
               <p>widget5</p>
               <p>widget6</p>
             </div>
-
-          </div>
-
-          <div class="rightSide">
-            <p class="button">Signin</p>
-            <p class="button">FS B</p>
-            <p class="button">hamMenu</p>
-          </div>
 
         </div>
       
