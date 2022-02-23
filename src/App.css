@@ -48,8 +48,9 @@ body {
   justify-content: space-between;
   background-color: blue;
   height: 7vh;
-  width: 8.5em;
-  min-width: 8.5em;
+  width: 8em;
+  min-width: 8em;
+  line-height: 1em;
 }
 
 .signButtons {
@@ -57,9 +58,8 @@ body {
   background: teal;
   justify-content: space-between;
   height: 7vh;
-  min-width: 13em;
-  width: 13em;
-  padding-left: auto;
+  min-width: 13.5em;
+  width: 13.5em;
 }
 
 .button {
@@ -68,9 +68,12 @@ body {
   align-items: center;
   color: white;
   background-color: #282c34;
-  height: 1em;
-  width: 3em;
-  padding: 0.5em;
+  height: 1.25em;
+  width: fit-content;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
   border-radius: 0.5em;
 }
 
@@ -78,15 +81,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   line-height: 0.5em;
   margin-top: 7.5em;
-  background: yellow;
+  background: #282c34;
+  color: white;
   min-width: 3.5em;
   width: 3.5em;
-  min-height: 25em;
-  height: 25em;
+  min-height: 34em;
+  height: 34em;
   border-radius: 0.5em;
+  font-size: 9pt;
+  padding: 0.25em;
+}
+
+.icon {
+  margin-bottom: -0.5em;
 }
 
 hr {
