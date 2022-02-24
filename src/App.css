@@ -66,6 +66,50 @@ body {
   border-color: white;
 }
 
+.shuffleHeader {
+  display: flex;
+  /* background: green; */
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  height: 2.5em;
+}
+
+.underShuffle {
+  font-size: 0.6em;
+  padding-left: 1.25em;
+  color: grey;
+}
+
+.spacesMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -1em;
+}
+
+.spacesTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: green; */
+}
+
+.spacesBot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -2em;
+}
+
+.spaceIcon {
+  border: 1px solid grey;
+  padding: 0.35em;
+  border-radius: 0.5em;
+  font-size: 20pt;
+}
+
 .rightPage {
   display: flex;
   flex-direction: column;

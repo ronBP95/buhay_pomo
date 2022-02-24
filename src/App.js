@@ -6,6 +6,7 @@ import { BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "rea
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-icons/ri";
 import { GiCrystalBall } from "react-icons/gi";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function App() {
   return (
@@ -13,17 +14,42 @@ function App() {
       
       <div class="leftPage">
         <div class="mainMenu">
-          <div class="exploreRow">
-            
+
+          <div class="exploreRow"> 
             <div class="exploreButton">
-              
              <div id="exploreIcon"><BsArrowLeft /></div> 
              <div>Explore</div>
-
             </div> 
-            
             <div class="minIcon"><BsDash  size={25}/></div>
           </div>
+
+          <div className="shuffleHeader">
+            <h4>Shuffle Spaces</h4>
+            <div class="shuffleArrows">
+            <IoIosArrowBack size={18}/>
+            <IoIosArrowForward size={18}/>
+            </div>
+          </div>
+
+          <div class="underShuffle">
+            <p>Click an emoji multiple times for more content</p>
+          </div>
+
+          <div class="spacesMenu">
+            <div class="spacesTop">
+              <p class="spaceIcon">🪐</p>
+              <p class="spaceIcon">📚</p>
+              <p class="spaceIcon">🎤</p>
+              <p class="spaceIcon">🧠</p>
+            </div>
+            <div class="spacesBot">
+              <p class="spaceIcon">🔮</p>
+              <p class="spaceIcon">🎟️</p>
+              <p class="spaceIcon">🖥️</p>
+              <p class="spaceIcon">🐕</p>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="rightPage">
@@ -41,6 +67,7 @@ function App() {
           </div>
 
         </div>
+
         <div class="widgets">
             <p>TOOLS</p>
           <div class="widgetCard">
