@@ -224,12 +224,11 @@ body {
 
 .menuFooter {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   /* background-color: green; */
   height: fit-content;
-  margin-top: 3.5em;
-  margin-left: 1em;
+  margin-top: 21em;
 }
 
 .footerCard {
