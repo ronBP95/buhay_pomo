@@ -110,6 +110,53 @@ body {
   font-size: 20pt;
 }
 
+.volumeControl {
+  background-color: #30343c;
+  height: 7.5em;
+  width: 100%;
+}
+
+.volumeHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-left: 1.25em;
+  line-height: 0.5em;
+}
+
+#volumeTitle {
+  font-size: 10pt;
+}
+
+#shareSpace {
+  font-size: 8pt;
+  color: grey;
+}
+
+.volumeIcons {
+  display: flex;
+  margin-right: 1em;
+}
+
+#vIcon1 {
+  border: 1px solid grey;
+  margin-right: 0.25em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: orange;
+  background-color: #2d333b;
+}
+
+#vIcon2 {
+  border: 1px solid grey;
+  margin-right: 0.25em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #2d333b;
+}
+
 .rightPage {
   display: flex;
   flex-direction: column;

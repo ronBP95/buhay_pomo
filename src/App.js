@@ -7,6 +7,8 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-icons/ri";
 import { GiCrystalBall } from "react-icons/gi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { AiOutlineHeart } from "react-icons/ai";
+import { ImMenu3 } from "react-icons/im";
 
 function App() {
   return (
@@ -48,6 +50,28 @@ function App() {
               <p class="spaceIcon">🖥️</p>
               <p class="spaceIcon">🐕</p>
             </div>
+          </div>
+
+          <div class="volumeControl">
+            
+            <div class="volumeHeader">
+              <div class="volumeName">
+                <p id="volumeTitle">props.title</p>
+                <p id="shareSpace">Share Space</p>
+              </div>  
+
+              <div class="volumeIcons">
+                <div id="vIcon1"><AiOutlineHeart size={25}/></div>
+                <div id="vIcon2"><ImMenu3 size={25}/></div>
+              </div>
+            </div>
+
+            <div class="volumeFooter">
+              <div><BiVolumeMute /></div>
+              <div><BiVolumeFull /></div>
+              <div><hr></hr></div>
+            </div>
+
           </div>
 
         </div>
