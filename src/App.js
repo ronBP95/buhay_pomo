@@ -2,12 +2,12 @@ import './App.css';
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
-import { BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "react-icons/bs";
-import { BiDotsVerticalRounded } from "react-icons/bi";
+import { BsShareFill, BsLink45Deg, BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "react-icons/bs";
+import { BiDotsVerticalRounded, BiVolumeMute } from "react-icons/bi";
 import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-icons/ri";
 import { GiCrystalBall } from "react-icons/gi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { ImMenu3 } from "react-icons/im";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       
       <div class="leftPage">
         <div class="mainMenu">
-
           <div class="exploreRow"> 
             <div class="exploreButton">
              <div id="exploreIcon"><BsArrowLeft /></div> 
@@ -67,15 +66,38 @@ function App() {
             </div>
 
             <div class="volumeFooter">
-              <div><BiVolumeMute /></div>
-              <div><BiVolumeFull /></div>
-              <div><hr></hr></div>
+              <div><BiVolumeMute size={25}/></div>
+              {/* Volume Full is commented out until state is built out */}
+              {/* <div><BiVolumeFull /></div> */}
+              <div id="volumeHR"><hr></hr></div>
+            </div>
+
+            <div class="spaceInfo">
+              <div class="imageCircle">
+                <div class="infoImg"></div>
+              </div>
+              <div class="infoCard">
+                <p>props.spaceName</p>
+                <div class="infoSocials">
+                  <p><AiFillInstagram size={20}/></p>
+                  <p><BsLink45Deg size={20}/></p>
+                  <p><AiFillYoutube size={20}/></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menuFooter">
+              <div class="footerCard">
+                <p class="footerButtons"><BsShareFill size={12}/></p>
+                <p class="footerButtons">🎥 Showcase</p>
+                <p class="footerButtons">?</p>
+              </div>
             </div>
 
           </div>
-
         </div>
       </div>
+
       <div class="rightPage">
 
         <div class="topButtons">

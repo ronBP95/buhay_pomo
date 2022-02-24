@@ -126,6 +126,10 @@ body {
   line-height: 0.5em;
 }
 
+.volumeName {
+  padding-left: 0.75em;
+}
+
 #volumeTitle {
   font-size: 10pt;
 }
@@ -155,6 +159,92 @@ body {
   padding: 0.5em;
   border-radius: 0.5em;
   background-color: #2d333b;
+}
+
+.volumeFooter {
+  display: flex;
+  align-items: center;
+  width: 10em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+  margin-top: 0.5em;
+  /* background-color: green; */
+}
+
+#volumeHR {
+  margin-left: 0.75em;
+}
+
+.spaceInfo {
+  display: flex;
+  /* background: green; */
+  margin-top: 1em;
+  width: 15em;
+}
+
+.imageCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-left: 1.25em;
+}
+
+.infoImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../public/assets/images/gradient.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 2.75em;
+  width: 2.75em;
+  border-radius: 5em;
+}
+
+.infoCard {
+  margin-top: 0.5em;
+  line-height: 1em;
+}
+
+.infoCard p {
+  font-size: 9pt;
+}
+
+.infoSocials {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+  margin-top: -1em;
+  /* background: red; */
+  width: 4.75em;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: green; */
+  height: 21em;
+}
+
+.footerCard {
+  display: flex;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  height: 2.5em;
+  width: fit-content;
+  margin-right: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.5em;
 }
 
 .rightPage {
