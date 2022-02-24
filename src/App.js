@@ -16,76 +16,79 @@ function App() {
       
       <div class="leftPage">
         <div class="mainMenu">
-          <div class="exploreRow"> 
-            <div class="exploreButton">
-             <div id="exploreIcon"><BsArrowLeft /></div> 
-             <div>Explore</div>
-            </div> 
-            <div class="minIcon"><BsDash  size={25}/></div>
-          </div>
-
-          <div className="shuffleHeader">
-            <h4>Shuffle Spaces</h4>
-            <div class="shuffleArrows">
-            <IoIosArrowBack size={18}/>
-            <IoIosArrowForward size={18}/>
+          <div class="leftTopMenu">
+            <div class="exploreRow"> 
+              <div class="exploreButton">
+              <div id="exploreIcon"><BsArrowLeft /></div> 
+              <div>Explore</div>
+              </div> 
+              <div class="minIcon"><BsDash  size={25}/></div>
             </div>
-          </div>
 
-          <div class="underShuffle">
-            <p>Click an emoji multiple times for more content</p>
-          </div>
-
-          <div class="spacesMenu">
-            <div class="spacesTop">
-              <p class="spaceIcon">🪐</p>
-              <p class="spaceIcon">📚</p>
-              <p class="spaceIcon">🎤</p>
-              <p class="spaceIcon">🧠</p>
-            </div>
-            <div class="spacesBot">
-              <p class="spaceIcon">🔮</p>
-              <p class="spaceIcon">🎟️</p>
-              <p class="spaceIcon">🖥️</p>
-              <p class="spaceIcon">🐕</p>
-            </div>
-          </div>
-
-          <div class="volumeControl">
-            
-            <div class="volumeHeader">
-              <div class="volumeName">
-                <p id="volumeTitle">props.title</p>
-                <p id="shareSpace">Share Space</p>
-              </div>  
-
-              <div class="volumeIcons">
-                <div id="vIcon1"><AiOutlineHeart size={25}/></div>
-                <div id="vIcon2"><ImMenu3 size={25}/></div>
+            <div className="shuffleHeader">
+              <h4>Shuffle Spaces</h4>
+              <div class="shuffleArrows">
+              <IoIosArrowBack size={18}/>
+              <IoIosArrowForward size={18}/>
               </div>
             </div>
 
-            <div class="volumeFooter">
-              <div><BiVolumeMute size={25}/></div>
-              {/* Volume Full is commented out until state is built out */}
-              {/* <div><BiVolumeFull /></div> */}
-              <div id="volumeHR"><hr></hr></div>
+            <div class="underShuffle">
+              <p>Click an emoji multiple times for more content</p>
             </div>
 
-            <div class="spaceInfo">
-              <div class="imageCircle">
-                <div class="infoImg"></div>
+            <div class="spacesMenu">
+              <div class="spacesTop">
+                <p class="spaceIcon">🪐</p>
+                <p class="spaceIcon">📚</p>
+                <p class="spaceIcon">🎤</p>
+                <p class="spaceIcon">🧠</p>
               </div>
-              <div class="infoCard">
-                <p>props.spaceName</p>
-                <div class="infoSocials">
-                  <p><AiFillInstagram size={20}/></p>
-                  <p><BsLink45Deg size={20}/></p>
-                  <p><AiFillYoutube size={20}/></p>
+              <div class="spacesBot">
+                <p class="spaceIcon">🔮</p>
+                <p class="spaceIcon">🎟️</p>
+                <p class="spaceIcon">🖥️</p>
+                <p class="spaceIcon">🐕</p>
+              </div>
+            </div>
+
+            <div class="volumeControl">
+              
+              <div class="volumeHeader">
+                <div class="volumeName">
+                  <p id="volumeTitle">props.title</p>
+                  <p id="shareSpace">Share Space</p>
+                </div>  
+
+                <div class="volumeIcons">
+                  <div id="vIcon1"><AiOutlineHeart size={25}/></div>
+                  <div id="vIcon2"><ImMenu3 size={25}/></div>
+                </div>
+              </div>
+
+              <div class="volumeFooter">
+                <div><BiVolumeMute size={25}/></div>
+                {/* Volume Full is commented out until state is built out */}
+                {/* <div><BiVolumeFull /></div> */}
+                <div id="volumeHR"><hr></hr></div>
+              </div>
+
+              <div class="spaceInfo">
+                <div class="imageCircle">
+                  <div class="infoImg"></div>
+                </div>
+                <div class="infoCard">
+                  <p>props.spaceName</p>
+                  <div class="infoSocials">
+                    <p><AiFillInstagram size={20}/></p>
+                    <p><BsLink45Deg size={20}/></p>
+                    <p><AiFillYoutube size={20}/></p>
+                  </div>
                 </div>
               </div>
             </div>
-
+          </div>
+            
             <div class="menuFooter">
               <div class="footerCard">
                 <p class="footerButtons"><BsShareFill size={12}/></p>
@@ -94,7 +97,6 @@ function App() {
               </div>
             </div>
 
-          </div>
         </div>
       </div>
 
@@ -146,7 +148,6 @@ function App() {
         </div>
         
       </div>
-
     </div>
   );
 }

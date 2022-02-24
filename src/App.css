@@ -177,7 +177,7 @@ body {
 
 .spaceInfo {
   display: flex;
-  /* background: green; */
+  /* background: red; */
   margin-top: 1em;
   width: 15em;
 }
@@ -224,10 +224,12 @@ body {
 
 .menuFooter {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   /* background-color: green; */
-  height: 21em;
+  height: fit-content;
+  margin-top: 3.5em;
+  margin-left: 1em;
 }
 
 .footerCard {
