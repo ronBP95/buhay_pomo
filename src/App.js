@@ -1,4 +1,5 @@
 import './App.css';
+import Draggable from "react-draggable"
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -8,7 +9,11 @@ import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-i
 import { GiCrystalBall } from "react-icons/gi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiOutlineHeart, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
-import { ImMenu3 } from "react-icons/im";
+import { ImMenu3 } from "react-icons/im"
+
+// Component Imports
+import Timer from "../src/components/Timer"
+
 
 function App() {
   return (
@@ -115,7 +120,13 @@ function App() {
           </div>
 
         </div>
-
+        
+        <Draggable>
+        <div>
+          <Timer />
+        </div>
+        </Draggable>
+        
         <div class="widgets">
             <p>TOOLS</p>
           <div class="widgetCard">
@@ -146,7 +157,7 @@ function App() {
           <div><hr></hr></div>
           <p>Reset</p>
         </div>
-        
+
       </div>
     </div>
   );

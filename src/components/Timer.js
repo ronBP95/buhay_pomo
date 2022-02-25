@@ -1,23 +1,34 @@
 import React from 'react';
+import "../components/css/Timer.css"
+import { GrPowerReset } from "react-icons/gr";
 
 const Timer = () => {
-    const classes = this.props.show ? 'Dialog' : 'Dialog hidden';
     return (
-        <div class={classes} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
-            <div class="DialogTitle">My Dialog</div>
-            <div class="Contents">
-                Contents of the dialog:
-                - 1
-                - 2
-                - 3
+        <div class="Timer">
+            <div class="topLayer">
+                <p>Timer</p>
+                <p>-</p>
             </div>
-            <div class="closeButton" onClick={this.props.onClose}>
-                Close
+            <div class="horizontal">
+                <div class="midLayer">
+                    <div class="clock">
+                        <p>00:00</p>
+                    </div>
+                    <div class="clockButtons">
+                        <p class="startClock">Start</p>
+                        <div><GrPowerReset color="white"/></div>
+                    </div>
+                </div>
+                <div class="botLayer">
+                    <p>Pomodoro</p>
+                    <p>Short Break</p>
+                    <p>Long Break</p>
+                    <p>wheel</p>
+                </div>
             </div>
         </div>
     );
 }
 
 export default Timer;
-
 

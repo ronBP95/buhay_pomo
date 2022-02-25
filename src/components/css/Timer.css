@@ -1,0 +1,54 @@
+.Timer {
+  background: #282c34;
+  width: 25em;
+  height: 10em;
+  border-radius: 0.5em;
+  color: white;
+  line-height: 0.25em;
+}
+
+.topLayer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.midLayer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  /* background: green; */
+  height: 5em;
+}
+
+.clock {
+  font-size: 40pt;
+}
+
+.clockButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10em;
+  color: white;
+}
+
+.startClock {
+  border: 1px solid grey;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 0.75em;
+}
+
+.botLayer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.horizontal {
+  border-top: 1px solid white;
+}
