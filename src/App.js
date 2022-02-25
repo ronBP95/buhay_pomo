@@ -20,7 +20,7 @@ function App() {
             <div class="exploreRow"> 
               <div class="exploreButton">
               <div id="exploreIcon"><BsArrowLeft /></div> 
-              <div>Explore</div>
+              <div>See Original</div>
               </div> 
               <div class="minIcon"><BsDash  size={25}/></div>
             </div>

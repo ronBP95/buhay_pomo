@@ -105,9 +105,16 @@ body {
 
 .spaceIcon {
   border: 1px solid grey;
-  padding: 0.35em;
+  padding: 0.55em;
   border-radius: 0.5em;
   font-size: 20pt;
+  transition: 0.3s;
+}
+
+.spaceIcon:hover {
+  background-color: grey;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .volumeControl {
