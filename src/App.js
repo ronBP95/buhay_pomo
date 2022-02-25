@@ -89,13 +89,13 @@ function App() {
             </div>
           </div>
             
-            <div class="menuFooter">
+            {/* <div class="menuFooter">
               <div class="footerCard">
                 <p class="footerButtons"><BsShareFill size={12}/></p>
                 <p class="footerButtons">🎥 Showcase</p>
                 <p class="footerButtons">?</p>
               </div>
-            </div>
+            </div> */}
 
         </div>
       </div>
