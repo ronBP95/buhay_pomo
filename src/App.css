@@ -158,6 +158,12 @@ body {
   border-radius: 0.5em;
   color: orange;
   background-color: #2d333b;
+  transition: 0.3s;
+}
+
+#vIcon1:hover {
+  background-color: grey;
+  transition: 0.3s;
 }
 
 #vIcon2 {
@@ -166,6 +172,12 @@ body {
   padding: 0.5em;
   border-radius: 0.5em;
   background-color: #2d333b;
+  transition: 0.3s;
+}
+
+#vIcon2:hover {
+  background-color: grey;
+  transition: 0.3s;
 }
 
 .volumeFooter {
