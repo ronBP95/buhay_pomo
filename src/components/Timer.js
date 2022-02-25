@@ -1,13 +1,14 @@
 import React from 'react';
 import "../components/css/Timer.css"
-import { GrPowerReset } from "react-icons/gr";
+import { BsArrowClockwise, BsGearFill, BsDash } from "react-icons/bs";
+
 
 const Timer = () => {
     return (
         <div class="Timer">
             <div class="topLayer">
                 <p>Timer</p>
-                <p>-</p>
+                <p><BsDash size={25}/></p>
             </div>
             <div class="horizontal">
                 <div class="midLayer">
@@ -16,14 +17,14 @@ const Timer = () => {
                     </div>
                     <div class="clockButtons">
                         <p class="startClock">Start</p>
-                        <div><GrPowerReset color="white"/></div>
+                        <div><BsArrowClockwise size={25}/></div>
                     </div>
                 </div>
                 <div class="botLayer">
                     <p>Pomodoro</p>
                     <p>Short Break</p>
                     <p>Long Break</p>
-                    <p>wheel</p>
+                    <p><BsGearFill /></p>
                 </div>
             </div>
         </div>

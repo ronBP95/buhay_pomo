@@ -120,13 +120,7 @@ function App() {
           </div>
 
         </div>
-        
-        <Draggable>
-        <div>
-          <Timer />
-        </div>
-        </Draggable>
-        
+
         <div class="widgets">
             <p>TOOLS</p>
           <div class="widgetCard">
@@ -157,6 +151,12 @@ function App() {
           <div><hr></hr></div>
           <p>Reset</p>
         </div>
+
+        <Draggable>
+        <div>
+          <Timer />
+        </div>
+        </Draggable>
 
       </div>
     </div>
