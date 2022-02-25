@@ -17,27 +17,30 @@
   height: 2.5em;
 }
 
-.midLayer {
+.timerWidget {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0.75em;
-  padding-right: 1em;
-  margin-top: 1em;
+  justify-content: space-around;
   align-items: center;
-  /* background: green; */
-  height: 2.5em;
+  margin-bottom: -1em;
 }
 
 .clock {
+  display: flex;
+  /* background: red; */
+  justify-content: center;
+  align-items: center;
   font-size: 20pt;
 }
 
 .clockButtons {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  /* background: green; */
   width: 10em;
   color: white;
+  cursor: pointer;
 }
 
 .startClock {
@@ -53,6 +56,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5em;
+  cursor: pointer;
 }
 
 .horizontal {
