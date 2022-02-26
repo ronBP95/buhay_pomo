@@ -2,6 +2,10 @@ import React,  { useState, useEffect } from 'react';
 import "../components/css/Timer.css"
 import { BsArrowClockwise, BsGearFill, BsDash } from "react-icons/bs";
 
+const Alert = () => {
+    alert("I'm sorry but this element is currently under construction!")
+}
+
 const Pomo = (props:any) => {
     const {initialMinute = 45, initialSeconds = 0} = props;
     const [ minutes, setMinutes ] = useState(initialMinute);
@@ -62,7 +66,7 @@ const Timer = () => {
                         <Pomo />
                     </div>
                     <div class="botLayer">
-                        <p>Pomodoro</p>
+                        <p onClick={Alert}>Pomodoro</p>
                         <p>Short Break</p>
                         <p>Long Break</p>
                         <p><BsGearFill /></p>
