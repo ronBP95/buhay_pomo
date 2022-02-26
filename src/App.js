@@ -1,5 +1,8 @@
 import './App.css';
 import Draggable from "react-draggable"
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { useState } from 'react'
+
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -15,7 +18,11 @@ import { ImMenu3 } from "react-icons/im"
 import Timer from "../src/components/Timer"
 
 function App() {
+  
+  const handle = useFullScreenHandle();
+
   return (
+    <FullScreen handle={handle}>
     <div id="page">
       
       <div class="leftPage">
@@ -114,7 +121,7 @@ function App() {
           
           <div class="signButtons">
             <p class="button">🚀 Sign Up</p>
-            <p class="button"><CgArrowsExpandRight /></p>
+            <p class="button" onClick={handle.enter}><CgArrowsExpandRight /></p>
             <p class="button"><BsFillPersonFill /><BiDotsVerticalRounded /></p>
           </div>
 
@@ -159,6 +166,7 @@ function App() {
 
       </div>
     </div>
+    </FullScreen>
   );
 }
 

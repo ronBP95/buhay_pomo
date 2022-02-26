@@ -1,15 +1,11 @@
-body {
-  /* background-color: #aec5c5; */
+#page {
+  display: flex;
   background: url(../public/assets/images/aot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
-}
-
-#page {
-  display: flex;
 }
 
 .leftPage {
