@@ -320,3 +320,76 @@
 hr {
   width: 3.3em;
 }
+
+.widgets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 0.75em;
+  margin-top: 11em;
+  background: #282c34;
+  min-width: 3.5em;
+  width: 3.5em;
+  min-height: 37em;
+  height: 37em;
+  border-radius: 0.5em;
+  padding: 0.75em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8pt;
+}
+
+#widgetHeader {
+  color: white;
+  cursor: default;
+}
+
+.icon {
+  margin-bottom: -0.5em;
+}
+
+#widgetAdd {
+  color: white;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.spacesCard {
+  color: orange;
+  cursor: pointer;
+}
+
+.spacesCard:active {
+  color: orange;
+}
+
+.timerCard {
+  color: white;
+  cursor: pointer;
+}
+
+.musicCard {
+  color: white;
+  cursor: pointer;
+}
+
+.soundsCard {
+  color: white;
+  cursor: pointer;
+}
+
+.todoCard {
+  color: white;
+  cursor: pointer;
+}
+
+.fortuneCard {
+  color: white;
+  cursor: pointer;
+}
+
+#widgetReset {
+  color: white;
+  cursor: pointer;
+}
