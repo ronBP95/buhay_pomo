@@ -15,6 +15,16 @@
   padding-left: 1em;
   padding-right: 1em;
   height: 2.5em;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.topLayer:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .timerWidget {
