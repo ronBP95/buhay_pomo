@@ -126,7 +126,7 @@ function App() {
 
         {/* Widgets Menu */}
         <Widgets />
-
+        
         {/* Timer Widget */}
         <Draggable>
         <div>
