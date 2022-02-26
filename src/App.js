@@ -14,10 +14,9 @@ import { ImMenu3 } from "react-icons/im"
 // Component Imports
 import Timer from "../src/components/Timer"
 
-
 function App() {
   return (
-    <div class="page">
+    <div id="page">
       
       <div class="leftPage">
         <div class="mainMenu">
