@@ -8,11 +8,15 @@ import { BsFillVolumeDownFill } from "react-icons/bs";
 // CSS Import
 import "../components/css/Widgets.css"
 
+const Reset = () => {
+    console.log("clicked")
+    window.location.reload();
+}
 
 const Widgets = () => {
     return (
         <div class="widgets">
-            <p>TOOLS</p>
+            <p id="widgetHeader">TOOLS</p>
           <div class="widgetCard">
             <div class="icon"><RiImageLine size={25}/></div>
             <p>Spaces</p>
@@ -36,10 +40,11 @@ const Widgets = () => {
           <div class="widgetCard">
           <div class="icon"><GiCrystalBall size={25} /> </div> 
             <p>Fortune</p>
+            <p id="widgetAdd">+</p>
           </div>
-          <p>+</p>
           <div><hr></hr></div>
-          <p>Reset</p>
+          <p id="widgetReset" onClick={Reset}>Reset</p>
+
         </div>
     );
 }
