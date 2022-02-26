@@ -3,7 +3,7 @@ import Draggable from "react-draggable"
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
-import { BsShareFill, BsLink45Deg, BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "react-icons/bs";
+import { BsLink45Deg, BsFillPersonFill, BsFillVolumeDownFill, BsDash, BsArrowLeft } from "react-icons/bs";
 import { BiDotsVerticalRounded, BiVolumeMute } from "react-icons/bi";
 import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-icons/ri";
 import { GiCrystalBall } from "react-icons/gi";

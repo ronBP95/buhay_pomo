@@ -49,25 +49,27 @@ const Pomo = (props:any) => {
 }
 
 const Timer = () => {
-    return (
-        <div class="Timer">
-            <div class="topLayer">
-                <p>Timer</p>
-                <p><BsDash size={25}/></p>
-            </div>
-            <div class="horizontal">
-                <div>
-                    <Pomo />
+
+    // Timer Display Hide Function
+        return (
+            <div class="Timer">
+                <div class="topLayer">
+                    <p>Timer</p>
+                    <p><BsDash size={25}/></p>
                 </div>
-                <div class="botLayer">
-                    <p>Pomodoro</p>
-                    <p>Short Break</p>
-                    <p>Long Break</p>
-                    <p><BsGearFill /></p>
+                <div class="horizontal">
+                    <div>
+                        <Pomo />
+                    </div>
+                    <div class="botLayer">
+                        <p>Pomodoro</p>
+                        <p>Short Break</p>
+                        <p>Long Break</p>
+                        <p><BsGearFill /></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
 }
 
 export default Timer;
