@@ -8,6 +8,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#video {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+}
+
 .leftPage {
   height: 97.5vh;
   width: 20em;

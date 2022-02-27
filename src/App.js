@@ -16,6 +16,10 @@ import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-i
 // Component Imports
 import Timer from "../src/components/Timer"
 
+// Video Imports
+// Space
+
+
 function App() {
   
   const handle = useFullScreenHandle();
@@ -26,6 +30,12 @@ function App() {
   const Reset = () => {
     console.log("clicked")
     window.location.reload();
+  }
+
+  const YoutubeEmbed = ({ embedId}) => {
+    <div class="video-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JNFX32Hz_N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   }
 
   return (
