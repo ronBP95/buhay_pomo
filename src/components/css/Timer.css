@@ -77,3 +77,24 @@
 .horizontal {
   border-top: 1px solid white;
 }
+
+.timerSettings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #282c34;
+  width: 25em;
+  height: 9em;
+  margin-top: -6em;
+  border-radius: 0.5em;
+}
+
+.settingsCard {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.settingsCard input {
+  width: 5em;
+}
