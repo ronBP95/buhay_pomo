@@ -356,12 +356,8 @@ hr {
 }
 
 .spacesCard {
-  color: orange;
+  color: white;
   cursor: pointer;
-}
-
-.spacesCard:active {
-  color: orange;
 }
 
 .timerCard {

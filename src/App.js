@@ -1,6 +1,7 @@
 import './App.css';
 import Draggable from "react-draggable"
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { useState } from 'react'
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -18,6 +19,8 @@ import Timer from "../src/components/Timer"
 function App() {
   
   const handle = useFullScreenHandle();
+  const [spaces, setSpaces] = useState(true)
+  const [timer, setTimer] = useState(false)
 
   // Reset Function for Widgets Menu
   const Reset = () => {
@@ -28,7 +31,7 @@ function App() {
   return (
     <FullScreen handle={handle}>
     <div id="page">
-      
+      {spaces ? 
       <div class="leftPage">
         <div class="mainMenu">
           <div class="leftTopMenu">
@@ -114,6 +117,7 @@ function App() {
 
         </div>
       </div>
+      : null}
 
       <div class="rightPage">
 
@@ -134,12 +138,12 @@ function App() {
         {/* Widgets Menu */}
         <div class="widgets">
             <p id="widgetHeader">TOOLS</p>
-          <div class="spacesCard">
+          <div class="spacesCard" onClick={() => setSpaces(!spaces)}>
             <div class="icon"><RiImageLine size={25}/></div>
             <p>Spaces</p>
           </div>
           <div class="timerCard">
-            <div class="icon"><RiTimerLine size={25}/> </div>
+            <div class="icon" onClick={() => setTimer(!timer)}><RiTimerLine size={25}/> </div>
             <p>Timer</p>
           </div>
           <div class="musicCard">
@@ -164,11 +168,15 @@ function App() {
         </div>
         
         {/* Timer Widget */}
-        <Draggable>
-        <div>
+        {timer ?           
+        <Draggable>     
+          <div>
           <Timer />
-        </div>
+          </div> 
         </Draggable>
+        : null}
+
+
 
       </div>
     </div>
