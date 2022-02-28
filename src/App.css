@@ -1,11 +1,21 @@
 #page {
   display: flex;
-  background: url(../public/assets/images/aot.jpg);
+  /* background: url(../public/assets/images/aot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   font-family: "Montserrat", sans-serif;
+}
+
+.backgroundVideo {
+  position: fixed;
+  z-index: -1;
+}
+
+.backgroundVideo iframe {
+  height: 100vh;
+  width: 100vw;
 }
 
 #video {

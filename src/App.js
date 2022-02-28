@@ -33,14 +33,15 @@ function App() {
   }
 
   const YoutubeEmbed = ({ embedId}) => {
-    <div class="video-responsive">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JNFX32Hz_N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    return  <iframe width="560" height="315" src="https://www.youtube.com/embed/atjAURP2_9o?rel=0&amp;autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   }
 
   return (
     <FullScreen handle={handle}>
     <div id="page">
+      <div class="backgroundVideo">
+        <YoutubeEmbed />
+      </div>
       {spaces ? 
       <div class="leftPage">
         <div class="mainMenu">
