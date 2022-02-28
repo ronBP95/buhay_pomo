@@ -8,14 +8,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.backgroundVideo {
+.backgroundVideo iframe {
   position: fixed;
   z-index: -1;
-}
-
-.backgroundVideo iframe {
-  height: 60em;
-  width: 100vw;
+  height: 70em;
+  width: 120em;
+  margin-left: -5.5em;
+  margin-top: -2em;
 }
 
 #video {
