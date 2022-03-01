@@ -65,13 +65,25 @@ function App() {
 
   const fantasyBackground = () => {
     load()
-    setUrl("https://www.youtube.com/embed/rJTw_LmDS4Y?autoplay=1&loop=1&autopause=0&mute=1&controls=0start=1")
+    setUrl("https://www.youtube.com/embed/rJTw_LmDS4Y?autoplay=1&loop=1&autopause=0&mute=1&controls=&0start=1")
   }
 
   const movieBackground = () => {
     load()
-    setUrl("https://www.youtube.com/embed/OhBo1A8atuA?autoplay=1&loop=1&autopause=0&mute=1&controls=0start=225")
+    setUrl("https://www.youtube.com/embed/OhBo1A8atuA?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=225")
   }
+
+  const studyBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/1ex_bNIFR1A?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=50")
+  }
+
+  const animalsBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/khCnS3KC3eY?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=35")
+  }
+  
+  
   return (
     <FullScreen handle={handle}>
     <div class="videoCont">
@@ -117,8 +129,8 @@ function App() {
               <div class="spacesBot">
                 <p class="spaceIcon" onClick={fantasyBackground}>🔮</p>
                 <p class="spaceIcon" onClick={movieBackground}>🎟️</p>
-                <p class="spaceIcon">🖥️</p>
-                <p class="spaceIcon">🐕</p>
+                <p class="spaceIcon" onClick={studyBackground}>🖥️</p>
+                <p class="spaceIcon" onClick={animalsBackground}>🐕</p>
               </div>
             </div>
 
@@ -126,8 +138,8 @@ function App() {
               
               <div class="volumeHeader">
                 <div class="volumeName">
-                  <p id="volumeTitle">props.title</p>
-                  <p id="shareSpace">Share Space</p>
+                  <p id="volumeTitle">Video Title Goes Here</p>
+                  <p id="shareSpace">Volume Control</p>
                 </div>  
 
                 <div class="volumeIcons">
@@ -148,10 +160,10 @@ function App() {
                   <div class="infoImg"></div>
                 </div>
                 <div class="infoCard">
-                  <p>props.spaceName</p>
+                  <p>Account Name Goes Here</p>
                   <div class="infoSocials">
-                    <p><AiFillInstagram size={20}/></p>
-                    <p><BsLink45Deg size={20}/></p>
+                    {/* <p><AiFillInstagram size={20}/></p>
+                    <p><BsLink45Deg size={20}/></p> */}
                     <p><AiFillYoutube size={20}/></p>
                   </div>
                 </div>
