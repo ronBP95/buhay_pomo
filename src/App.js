@@ -2,6 +2,7 @@ import './App.css';
 import Draggable from "react-draggable"
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { useState } from 'react'
+import $ from 'jquery';
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -24,6 +25,7 @@ function App() {
   const handle = useFullScreenHandle();
   const [spaces, setSpaces] = useState(true)
   const [timer, setTimer] = useState(false)
+  const [url, setUrl] = useState("")
 
   // Reset Function for Widgets Menu
   const Reset = () => {
@@ -32,15 +34,22 @@ function App() {
   }
 
   const YoutubeEmbed = ({}) => {
-    return  <iframe src="https://www.youtube.com/embed/atjAURP2_9o?rel=0&amp;autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    return <iframe src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  }
+
+  const spaceBackground = () => {
+    setUrl("https://www.youtube.com/embed/atjAURP2_9o?autoplay=1&loop=1&autopause=0&mute=1&controls=0")
   }
 
   return (
     <FullScreen handle={handle}>
-    <div id="page">
-      <div class="backgroundVideo">
-        <YoutubeEmbed />
+    <div class="videoCont">
+      <div id="backgroundVideo">
+      <YoutubeEmbed />
       </div>
+    </div>
+
+    <div id="page">
       {spaces ? 
       <div class="leftPage">
         <div class="mainMenu">
@@ -67,7 +76,7 @@ function App() {
 
             <div class="spacesMenu">
               <div class="spacesTop">
-                <p class="spaceIcon">🪐</p>
+                <p class="spaceIcon" onClick={spaceBackground}>🪐</p>
                 <p class="spaceIcon">📚</p>
                 <p class="spaceIcon">🎤</p>
                 <p class="spaceIcon">🧠</p>
