@@ -72,6 +72,14 @@ body {
   padding: 0.35em;
   margin-left: -0.5em;
   border-radius: 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 #exploreIcon {
@@ -101,12 +109,14 @@ body {
   padding-right: 0.75em;
   padding-left: 0.75em;
   height: 2.5em;
+  cursor: default;
 }
 
 .underShuffle {
   font-size: 0.6em;
   padding-left: 1.25em;
   color: grey;
+  cursor: default;
 }
 
 .spacesMenu {
@@ -162,6 +172,7 @@ body {
 
 .volumeName {
   padding-left: 0.75em;
+  cursor: default;
 }
 
 #volumeTitle {
@@ -211,7 +222,7 @@ body {
   display: flex;
   align-items: center;
   width: 10em;
-  margin-left: 1.25em;
+  margin-left: 1.85em;
   margin-right: 1.25em;
   margin-top: 0.5em;
   /* background-color: green; */
@@ -257,6 +268,7 @@ body {
 
 .infoCard p {
   font-size: 9pt;
+  cursor: default;
 }
 
 .infoSocials {
@@ -266,6 +278,10 @@ body {
   margin-top: -1em;
   /* background: red; */
   width: 4.75em;
+}
+
+.infoSocials p {
+  cursor: pointer;
 }
 
 .menuFooter {
@@ -322,6 +338,7 @@ body {
   height: 7vh;
   width: 9em;
   min-width: 9em;
+  cursor: default;
 }
 
 .signButtons {
@@ -331,6 +348,7 @@ body {
   height: 7vh;
   min-width: 13.5em;
   width: 13.5em;
+  cursor: pointer;
 }
 
 .button {
@@ -363,8 +381,8 @@ hr {
   background: #282c34;
   min-width: 3.5em;
   width: 3.5em;
-  min-height: 37em;
-  height: 37em;
+  min-height: 35em;
+  height: 35em;
   border-radius: 0.5em;
   padding: 0.75em;
   font-family: "Montserrat", sans-serif;

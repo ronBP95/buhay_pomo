@@ -102,7 +102,7 @@ function App() {
             <div class="exploreRow"> 
               <div class="exploreButton">
               <div id="exploreIcon"><BsArrowLeft /></div> 
-              <div>See Original</div>
+              <a href="https://github.com/ronBP95/buhay_pomo">Source</a>
               </div> 
               <div class="minIcon" onClick={() => setSpaces(!spaces)}><BsDash  size={25}/></div>
             </div>
@@ -225,7 +225,7 @@ function App() {
           <div class="fortuneCard">
           <div class="icon"><GiCrystalBall size={25} /> </div> 
             <p>Fortune</p>
-            <p id="widgetAdd">+</p>
+            {/* <p id="widgetAdd">+</p> */}
           </div>
           <div><hr></hr></div>
           <p id="widgetReset" onClick={Reset}>Reset</p>
