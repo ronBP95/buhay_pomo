@@ -2,7 +2,6 @@ import './App.css';
 import Draggable from "react-draggable"
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { useState } from 'react'
-import $ from 'jquery';
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -16,10 +15,6 @@ import { RiImageLine, RiTimerLine, RiSoundModuleFill, RiTodoLine } from "react-i
 
 // Component Imports
 import Timer from "../src/components/Timer"
-
-// Video Imports
-// Space
-
 
 function App() {
   const handle = useFullScreenHandle();
@@ -37,10 +32,46 @@ function App() {
     return <iframe src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   }
 
+  function load () {
+      document.getElementById("overlay").style.visibility = "visible"
+    const hideLoad = setTimeout(() => {
+      console.log("Loading Screen Hidden")
+      document.getElementById("overlay").style.visibility = "hidden"
+    }, 2000);
+    return () => hideLoad();
+  }
+
+  // Backgrounds
+
   const spaceBackground = () => {
+    load()
     setUrl("https://www.youtube.com/embed/atjAURP2_9o?autoplay=1&loop=1&autopause=0&mute=1&controls=0")
   }
 
+  const libraryBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/YQc4WT0yDH4?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=240")
+  }
+
+  const lofiBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=18")
+  }
+
+  const animeBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/5wRWniH7rt8?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=150")
+  }
+
+  const fantasyBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/rJTw_LmDS4Y?autoplay=1&loop=1&autopause=0&mute=1&controls=0start=1")
+  }
+
+  const movieBackground = () => {
+    load()
+    setUrl("https://www.youtube.com/embed/OhBo1A8atuA?autoplay=1&loop=1&autopause=0&mute=1&controls=0start=225")
+  }
   return (
     <FullScreen handle={handle}>
     <div class="videoCont">
@@ -48,6 +79,8 @@ function App() {
       <YoutubeEmbed />
       </div>
     </div>
+
+    <div id="overlay">Loading...</div>
 
     <div id="page">
       {spaces ? 
@@ -71,19 +104,19 @@ function App() {
             </div>
 
             <div class="underShuffle">
-              <p>Click an emoji multiple times for more content</p>
+              <p>Click an emoji to switch between content</p>
             </div>
 
             <div class="spacesMenu">
               <div class="spacesTop">
                 <p class="spaceIcon" onClick={spaceBackground}>🪐</p>
-                <p class="spaceIcon">📚</p>
-                <p class="spaceIcon">🎤</p>
-                <p class="spaceIcon">🧠</p>
+                <p class="spaceIcon" onClick={libraryBackground}>📚</p>
+                <p class="spaceIcon" onClick={lofiBackground}>🎤</p>
+                <p class="spaceIcon" onClick={animeBackground}>🧠</p>
               </div>
               <div class="spacesBot">
-                <p class="spaceIcon">🔮</p>
-                <p class="spaceIcon">🎟️</p>
+                <p class="spaceIcon" onClick={fantasyBackground}>🔮</p>
+                <p class="spaceIcon" onClick={movieBackground}>🎟️</p>
                 <p class="spaceIcon">🖥️</p>
                 <p class="spaceIcon">🐕</p>
               </div>
