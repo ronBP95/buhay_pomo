@@ -104,15 +104,15 @@ function App() {
               <div id="exploreIcon"><BsArrowLeft /></div> 
               <div>See Original</div>
               </div> 
-              <div class="minIcon"><BsDash  size={25}/></div>
+              <div class="minIcon" onClick={() => setSpaces(!spaces)}><BsDash  size={25}/></div>
             </div>
 
             <div className="shuffleHeader">
               <h4>Shuffle Spaces</h4>
-              <div class="shuffleArrows">
+              {/* <div class="shuffleArrows">
               <IoIosArrowBack size={18}/>
               <IoIosArrowForward size={18}/>
-              </div>
+              </div> */}
             </div>
 
             <div class="underShuffle">
