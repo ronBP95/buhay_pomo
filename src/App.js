@@ -2,6 +2,7 @@ import './App.css';
 import Draggable from "react-draggable"
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { useState, useEffect } from 'react'
+import Alert from 'react-bootstrap/Alert'
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -49,6 +50,7 @@ function App() {
     }, 2000);
     return () => hideLoad();
   }
+
 
   // Backgrounds
 
@@ -176,10 +178,10 @@ function App() {
                   <p id="shareSpace">Volume Control</p>
                 </div>  
 
-                <div class="volumeIcons">
-                  <div id="vIcon1"><AiOutlineHeart size={25}/></div>
-                  <div id="vIcon2"><ImMenu3 size={25}/></div>
-                </div>
+                {/* <div class="volumeIcons">
+                    <div id="vIcon1"><AiOutlineHeart size={25}/></div>
+                    <div id="vIcon2"><ImMenu3 size={25}/></div>
+                </div> */}
               </div>
 
               <div class="volumeFooter">
@@ -226,9 +228,9 @@ function App() {
           </div>
           
           <div class="signButtons">
-            <p class="button">🚀 Sign Up</p>
+            <p class="button" onClick={() => window.alert("This feature is currently under construction!")}>🚀 Sign Up</p>
             <p class="button" onClick={handle.enter}><CgArrowsExpandRight /></p>
-            <p class="button"><BsFillPersonFill /><BiDotsVerticalRounded /></p>
+            <p class="button" onClick={() => window.alert("This feature is currently under construction!")}><BsFillPersonFill /><BiDotsVerticalRounded /></p>
           </div>
 
         </div>
@@ -245,19 +247,19 @@ function App() {
             <p>Timer</p>
           </div>
           <div class="musicCard">
-          <div class="icon"><BsFillVolumeDownFill size={25} /> </div>    
+          <div class="icon" onClick={() => window.alert("This feature is only available with a premium membership!")}><BsFillVolumeDownFill size={25} /> </div>    
             <p>Music</p>
           </div>
           <div class="soundsCard">
-          <div class="icon"><RiSoundModuleFill size={25} /> </div> 
+          <div class="icon" onClick={() => window.alert("This feature is only available with a premium membership!")}><RiSoundModuleFill size={25} /> </div> 
             <p>Sounds</p>
           </div>
           <div class="todoCard">
-          <div class="icon"><RiTodoLine size={25} /> </div> 
+          <div class="icon" onClick={() => window.alert("This feature is currently under construction!")}><RiTodoLine size={25} /> </div> 
           <p>To-Do</p>
           </div>
           <div class="fortuneCard">
-          <div class="icon"><GiCrystalBall size={25} /> </div> 
+          <div class="icon" onClick={() => window.alert("This feature is currently under construction!")}><GiCrystalBall size={25} /> </div> 
             <p>Fortune</p>
             {/* <p id="widgetAdd">+</p> */}
           </div>

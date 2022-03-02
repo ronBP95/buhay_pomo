@@ -40,7 +40,7 @@ const Pomo = (props: any) => {
         <div class="timerWidget">
             <div class="clock">
                 {minutes === 0 && seconds === 0
-                    ? null
+                    ? "DONE!"
                     : <h1> {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
                 }
             </div>
@@ -86,7 +86,7 @@ const ShortBreak = (props: any) => {
         <div class="timerWidget">
             <div class="clock">
                 {minutes === 0 && seconds === 0
-                    ? null
+                    ? "DONE!"
                     : <h1> {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
                 }
             </div>
@@ -132,7 +132,7 @@ const LongBreak = (props: any) => {
         <div class="timerWidget">
             <div class="clock">
                 {minutes === 0 && seconds === 0
-                    ? null
+                    ? "DONE!"
                     : <h1> {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
                 }
             </div>
