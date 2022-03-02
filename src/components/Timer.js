@@ -177,7 +177,7 @@ const Timer = () => {
         <div class="Timer">
             <div class="topLayer">
                 <p>Timer</p>
-                <p id="minIcon"><BsDash size={25} /></p>
+                {/* <p id="minIcon"><BsDash size={25} /></p> */}
             </div>
             <div class="horizontal">
                 <div>

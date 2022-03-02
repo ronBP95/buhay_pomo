@@ -72,31 +72,49 @@ function App() {
 
   const lofiBackground = () => {
     load()
+    setVideoName("1 A.M Study Session")
+    setUploader("@Lofi Girl")
+    setVideoLink("https://www.youtube.com/watch?v=lTRiuFIWV54&t=18s")
     setUrl("https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=18")
   }
 
   const animeBackground = () => {
     load()
+    setVideoName("cherry blossom")
+    setUploader("@The Jazz Hop Cafe")
+    setVideoLink("https://www.youtube.com/watch?v=5wRWniH7rt8&t=150s")
     setUrl("https://www.youtube.com/embed/5wRWniH7rt8?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=150")
   }
 
   const fantasyBackground = () => {
     load()
+    setVideoName("Fantasy Lofi")
+    setUploader("Blue Turtle")
+    setVideoLink("https://www.youtube.com/watch?v=rJTw_LmDS4Y&t=1s")
     setUrl("https://www.youtube.com/embed/rJTw_LmDS4Y?autoplay=1&loop=1&autopause=0&mute=1&controls=&0start=1")
   }
 
   const movieBackground = () => {
     load()
+    setVideoName("Amazing Visuals")
+    setUploader("SUJANSHETTY")
+    setVideoLink("https://www.youtube.com/watch?v=OhBo1A8atuA&t=226s")
     setUrl("https://www.youtube.com/embed/OhBo1A8atuA?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=225")
   }
 
   const studyBackground = () => {
     load()
+    setVideoName("STUDY WITH ME")
+    setUploader("@Merve")
+    setVideoLink("https://www.youtube.com/watch?v=1ex_bNIFR1A&t=62s")
     setUrl("https://www.youtube.com/embed/1ex_bNIFR1A?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=50")
   }
 
   const animalsBackground = () => {
     load()
+    setVideoName("Forest Animals")
+    setUploader("Handsome Nature")
+    setVideoLink("https://www.youtube.com/watch?v=khCnS3KC3eY&t=38s")
     setUrl("https://www.youtube.com/embed/khCnS3KC3eY?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=35")
   }
 
