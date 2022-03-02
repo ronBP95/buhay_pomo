@@ -46,7 +46,7 @@ const Pomo = (props: any) => {
             </div>
             <div class="clockButtons">
                 <p class="startClock" onClick={toggleOn}>{isActive ? 'Pause' : 'Start'}</p>
-                <div><BsArrowClockwise size={25} /></div>
+                {/* <div><BsArrowClockwise size={25} /></div> */}
             </div>
         </div>
     )
@@ -189,7 +189,7 @@ const Timer = () => {
                     <p onClick={pomoOn}>Pomodoro</p>
                     <p onClick={shortOn}>Short Break</p>
                     <p onClick={longOn}>Long Break</p>
-                    <p onClick={settingsOn}><BsGearFill /></p>
+                    {/* <p onClick={settingsOn}><BsGearFill /></p> */}
                 </div>
                 {settings ?                 
                 <div class="timerSettings">
