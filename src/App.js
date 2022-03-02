@@ -1,7 +1,7 @@
 import './App.css';
 import Draggable from "react-draggable"
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // React Icon Imports
 import { CgArrowsExpandRight,  } from "react-icons/cg";
@@ -22,6 +22,10 @@ function App() {
   const [timer, setTimer] = useState(false)
   const [url, setUrl] = useState("")
 
+  useEffect(() => {
+    spaceBackground();
+  }, []);
+
   // Reset Function for Widgets Menu
   const Reset = () => {
     console.log("clicked")
@@ -29,7 +33,7 @@ function App() {
   }
 
   const YoutubeEmbed = ({}) => {
-    return <iframe src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    return <iframe src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   }
 
   function load () {
@@ -42,6 +46,8 @@ function App() {
   }
 
   // Backgrounds
+
+  // Default Background Load
 
   const spaceBackground = () => {
     load()
@@ -82,8 +88,7 @@ function App() {
     load()
     setUrl("https://www.youtube.com/embed/khCnS3KC3eY?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=35")
   }
-  
-  
+
   return (
     <FullScreen handle={handle}>
     <div class="videoCont">
