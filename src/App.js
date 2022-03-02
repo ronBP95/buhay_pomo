@@ -22,6 +22,11 @@ function App() {
   const [timer, setTimer] = useState(false)
   const [url, setUrl] = useState("")
 
+  // State for Account and Video Names
+  const [videoName, setVideoName] = useState("")
+  const [uploader, setUploader] = useState("")
+  const [videoLink, setVideoLink] = useState("")
+
   useEffect(() => {
     spaceBackground();
   }, []);
@@ -51,11 +56,17 @@ function App() {
 
   const spaceBackground = () => {
     load()
+    setVideoName("Living Room Spaceship")
+    setUploader("Universe")
+    setVideoLink("https://www.youtube.com/watch?v=atjAURP2_9o&t=1240s")
     setUrl("https://www.youtube.com/embed/atjAURP2_9o?autoplay=1&loop=1&autopause=0&mute=1&controls=0")
   }
 
   const libraryBackground = () => {
     load()
+    setVideoName("COZY Rainy Library")
+    setUploader("dreamy sound")
+    setVideoLink("https://www.youtube.com/watch?v=YQc4WT0yDH4&t=243s")
     setUrl("https://www.youtube.com/embed/YQc4WT0yDH4?autoplay=1&loop=1&autopause=0&mute=1&controls=0&start=240")
   }
 
@@ -143,7 +154,7 @@ function App() {
               
               <div class="volumeHeader">
                 <div class="volumeName">
-                  <p id="volumeTitle">Video Title Goes Here</p>
+                  <p id="volumeTitle">{videoName}</p>
                   <p id="shareSpace">Volume Control</p>
                 </div>  
 
@@ -165,11 +176,11 @@ function App() {
                   <div class="infoImg"></div>
                 </div>
                 <div class="infoCard">
-                  <p>Account Name Goes Here</p>
+                  <p>Uploader : {uploader}</p>
                   <div class="infoSocials">
                     {/* <p><AiFillInstagram size={20}/></p>
                     <p><BsLink45Deg size={20}/></p> */}
-                    <p><AiFillYoutube size={20}/></p>
+                    <p><a href={videoLink}><AiFillYoutube size={20}/></a></p>
                   </div>
                 </div>
               </div>
