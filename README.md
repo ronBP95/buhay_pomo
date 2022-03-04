@@ -11,7 +11,7 @@ Currently being hosted on Heroku services.
 How to Use:
 
 - You can view the site at the link above but please note that issues are currently being experienced due to the large nature of the application. Wait times and load times can vary.
-- If the method above takes too long, please feel free to "git clone" the project as it can also operate on your local machine.
+- If the method above takes too long, please feel free to "git clone" the project as it can also function on your local machine.
 
 <br>
 
