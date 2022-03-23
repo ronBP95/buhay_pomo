@@ -4,7 +4,7 @@
 
 <br>
 
-View Site: [buhay_Pomo](https://rm-just-apod.herokuapp.com/)
+View Site: [buhay_Pomo](https://buhay-pomo.herokuapp.com/)
 
 Currently being hosted on Heroku services.
 
