@@ -3,6 +3,8 @@
 
 name: Deploy to Firebase Hosting on merge
 "on":
+env:
+  CI: false
   push:
     branches:
       - firebase2
