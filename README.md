@@ -4,14 +4,14 @@
 
 <br>
 
-View Site: [buhay_Pomo](https://buhay-pomo.herokuapp.com/)
+View Site: [buhay_Pomo](https://buhay-pomo.web.app/)
 
-Currently being hosted on Heroku services.
+Currently being hosted on Firebase services.
 
 How to Use:
 
-- You can view the site at the link above but please note that issues are currently being experienced due to the large nature of the application. Wait times and load times can vary.
-- If the method above takes too long, please feel free to "git clone" the project as it can also function on your local machine.
+- You may access the application at the link above.
+- Please feel free to "git clone" the project as it can also function on your local machine.
 
 <br>
 
@@ -101,6 +101,6 @@ Disclaimer: The buhay_Pomo application was only created for learning purposes an
 
 <br>
 
-Last Updated: 3-2-2022
+Last Updated: 6-27-2022
 
 <a href="#top"> Back to Top ⬆️ </a>
